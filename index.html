@@ -1,18 +1,85 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Hello, World! • A-Frame</title>
-    <meta name="description" content="Hello, World! • A-Frame">
-    <script src="https://aframe.io/releases/0.2.0/aframe.min.js"></script>
-  </head>
-  <body>
-    <a-scene>
-      <a-sphere position="0 1.25 -1" radius="1.25" color="#EF2D5E"></a-sphere>
-      <a-cube position="-1 0.5 1" rotation="0 45 0" width="1" height="1" depth="1" color="#4CC3D9"></a-cube>
-      <a-cylinder position="1 0.75 1" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
-      <a-plane rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
-      <a-sky color="#ECECEC"></a-sky>
-    </a-scene>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>Primitives</title>
+  <meta name="The Worlds First Content Management Platform" content="Primitives">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/primitives.css">
+  <script src="https://aframe.io/releases/0.2.0/aframe.min.js"></script>
+
+</head>
+
+<body>
+  <!-- A-Frame -->
+  <a-scene vr-mode-ui="enabled: false">
+
+    <!-- Assets -->
+    <a-assets>
+      <img id="scene" src="primitiveScene.png">
+    </a-assets>
+
+    <!-- sky environments -->
+    <a-sky id="environment" src="#scene" opactiy="0">
+      <a-animation attribute="opacity" dur="1800" to="1">
+      </a-animation>
+    </a-sky>
+
+  <!-- camera -->
+    <a-entity id="head">
+      <a-camera position="0 1.8 0" fov="80"></a-camera>
+        <a-animation attribute="rotation" begin="2000" dur="2000" from="0 0 0" to="0 90 0" easing="ease-in" reapeat="indefinite" direction="alternate"></a-animation>
+        <a-animation attribute="rotation" begin="4200" dur="2000" from="0 90 0" to="0 180 0" easing="ease-in" reapeat="indefinite" direction="alternate"></a-animation>
+        <a-animation attribute="rotation" begin="6400" dur="2000" from="0 180 0" to="0 360 0" easing="ease-in" reapeat="indefinite" direction="alternate"></a-animation>
+    </a-entity>
+  </a-scene>
+
+  <!-- Copy -->
+  <!-- Header -->
+  <div class="headerlogo"><img class="primitiveslogo" src="Primitives Logox2.png" width="170">
+  </div>
+
+  <!-- Hero Text -->
+  <div class="herosection">
+    <h1 class="maintext">Content To App In Minutes!</h1>
+    <p class="paragraphtext">The world’s first cloud content management platform for AR and VR. Host, manage and deploy 3D and software on all major headsets.</p>
+  </div>
+
+  <!-- High Level -->
+  <div class="highlevelsection">
+    <div class="highleveldiv">
+      <div class="point">
+        <div class="mainpoint">Workflow Automation</div>
+      </div>
+      <div class="point">
+        <div class="mainpoint">Multi Platform Deployment</div>
+      </div>
+      <div class="point">
+        <div class="mainpoint">Content Versioning, Finally!</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Form that doesn't work right now 😞-->
+
+  <div class="cta">
+    <div class="formwrapper">
+      <form class="formfield" data-name="Email Form" id="email-form" name="email-form">
+        <input class="emailfield" data-name="Email" id="email" maxlength="256" name="email" placeholder="Sign Up for Beta with your Email" required="required" type="email">
+        <input class="ctabutton" data-wait="Please wait..." type="submit" value="SUBMIT">
+      </form>
+      <div class="success">
+        <div>Thank You!</div>
+      </div>
+      <div class="errormessage">
+        <div>Oops! Something went wrong submitting</div>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+
 </html>

@@ -1,0 +1,151 @@
+
+    .headerlogo{
+      height: 100px;
+      margin-top: 0px;
+      padding-top: 50px;
+      position: relative;
+    }
+
+    .primitiveslogo {
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    .herosection{
+        display: block;
+        height: auto;
+        position: relative;
+    }
+
+    .maintext {
+        display: block;
+        margin: 0px 100px;
+        padding-top: 0px;
+        font-family: 'Open Sans', sans-serif;
+        color: #767676;
+        font-size: 52px;
+        font-weight: 100;
+        text-align: center;
+        letter-spacing: 4.81px;
+        text-transform: uppercase;
+        pointer-events: none;
+    }
+
+    .paragraphtext{
+        display: block;
+        width: 80%;
+        margin-top: 11px;
+        margin-right: auto;
+        margin-left: auto;
+        font-family: 'Open Sans', sans-serif;
+        color: #a4a4a4;
+        font-size: 22px;
+        line-height: 43px;
+        font-weight: 300;
+        text-align: center;
+        letter-spacing: 1px;
+        pointer-events: none;
+    }
+
+    .highlevelsection {
+      float: none;
+      clear: none;
+      display: block;
+      height: auto;
+      position: relative;
+    }
+
+    .highleveldiv {
+      display: block;
+      width: 700px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    .point {
+      width: 215px;
+      height: 32px;
+      margin-top: 20px;
+      margin-left: 18px;
+      float: left;
+      border-width: 2px;
+      border-color: #d6d6d6;
+      border-bottom-style: solid;
+      background-color: white;
+    }
+
+    .mainpoint {
+      display: block;
+      margin-top: 8px;
+      padding-top: 0px;
+      font-family: 'Open Sans', sans-serif;
+      color: #767676;
+      font-size: 13px;
+      text-align: center;
+    }
+
+    /* Form */
+    .cta {
+      display: block;
+      height: 165px;
+      padding-top: 61px;
+      clear: left;
+      position: relative;
+    }
+
+    .formwrapper {
+      display: block;
+      width: 340px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    .formfield {
+      width: 340px;
+      color: #767676;
+      text-align: center;
+    }
+
+    .emailfield {
+      width: 340px;
+      height: 40px;
+      border-style: none;
+      border-bottom-width: 1px;
+      border-bottom-color: #000;
+      background-color: #e2e2e2;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 16px;
+      font-weight: 300;
+      text-align: center;
+      letter-spacing: 1px;
+      text-transform: none;
+      margin-bottom: 10px;
+    }
+
+    .ctabutton {
+      display: block;
+      width: 340px;
+      height: 38px;
+      margin-right: auto;
+      margin-left: auto;
+      margin-top: 20px
+      padding-top: 9px;
+      border: 1px solid blue;
+      background-color: white;
+      color: blue;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .success {
+      background-color: #e2e2e2;
+      height: 45;
+      box-shadow: 0 0 6px 0 #858585;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 300;
+      visibility: hidden;
+    }
+    .errormessage {
+      visibility: hidden;
+    }

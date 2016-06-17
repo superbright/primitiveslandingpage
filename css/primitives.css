@@ -87,11 +87,18 @@
 
     /* Form */
     .cta {
-      display: block;
       height: 165px;
       padding-top: 61px;
       clear: left;
-      position: relative;
+      width: 100%;
+      text-align: center;
+  
+    }
+
+    .cta_center {
+        width: 40%;
+        margin: 0 auto;
+      text-align: left;
     }
 
     .formwrapper {

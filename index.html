@@ -3,65 +3,59 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Primitives</title>
-  <meta name="The Worlds First Content Management Platform" content="Primitives">
+  <title>Primitives___Alpha.v0.1</title>
+  <meta name="Content To App In Minutes" content="Primitives">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/primitives.css">
-  <script src="https://aframe.io/releases/0.2.0/aframe.min.js"></script>
+	<link rel ="stylesheet" type="text/css" href="css/form.css">
+	
+<!-- favicons -->
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+  <script type="text/javascript">
+    WebFont.load({
+      google: {
+        families: ["Open Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic"]
+      }
+    });
+  </script>
 
 </head>
-
-<body>
-  <!-- A-Frame -->
-  <a-scene vr-mode-ui="enabled: false">
-
-    <!-- Assets -->
-    <a-assets>
-      <img id="scene" src="primitiveScene.png">
-    </a-assets>
-
-    <!-- sky environments -->
-    <a-sky id="environment" src="#scene" opactiy="0">
-      <a-animation attribute="opacity" dur="1800" to="1">
-      </a-animation>
-    </a-sky>
-
-    <!-- camera -->
-    <a-entity id="head">
-      <a-camera position="0 1.8 0" fov="80"></a-camera>
-      <a-animation attribute="rotation" begin="2000" dur="2000" from="0 0 0" to="0 90 0" easing="ease-in" reapeat="indefinite" direction="alternate"></a-animation>
-      <a-animation attribute="rotation" begin="4200" dur="2000" from="0 90 0" to="0 180 0" easing="ease-in" reapeat="indefinite" direction="alternate"></a-animation>
-      <a-animation attribute="rotation" begin="6400" dur="2000" from="0 180 0" to="0 360 0" easing="ease-in" reapeat="indefinite" direction="alternate"></a-animation>
-    </a-entity>
-  </a-scene>
-
-  <!-- Copy -->
-  <!-- Header -->
-  <div class="headerlogo"><img class="primitiveslogo" src="Primitives Logox2.png" width="170">
-  </div>
-
-  <!-- Hero Text -->
-  <div class="herosection">
-    <h1 class="maintext">Content To App In Minutes!</h1>
-    <p class="paragraphtext">The world’s first cloud content management platform for AR and VR. Host, manage and deploy 3D and software on all major headsets.</p>
-  </div>
-
-  <!-- High Level -->
-  <div class="highlevelsection">
-    <div class="highleveldiv">
-      <div class="point">
-        <div class="mainpoint">Workflow Automation</div>
-      </div>
-      <div class="point">
-        <div class="mainpoint">Multi Platform Deployment</div>
-      </div>
-      <div class="point">
-        <div class="mainpoint">Content Versioning, Finally!</div>
-      </div>
+	
+	<body>
+		
+		<div class="header">
+    <div class="topbar ">
+      <h6 class="leftjustified toptext">Alpha</h6>
+      <h6 class="rightjustified toptext">v0.1</h6><img class="toplogo" height="30" src="images/Logo2x.png" width="49">
     </div>
-  </div>
+		
+		
+		<div>
+			<div class="imagebody"><img class="heroimage" height="527" src="images/Image2x.png" width="650">
+			</div>
+		</div>
+		
+		
 
-  <!-- Form that doesn't work right now 😞-->
+<!-- Form -->
   <div class="cta">
     <div class="cta_center">
     <!-- Begin MailChimp Signup Form -->
@@ -79,9 +73,11 @@
       <form action="//primitiv.us13.list-manage.com/subscribe/post?u=72ec074251e6f09af48ddb75d&amp;id=53d77cbb15" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
         <div id="mc_embed_signup_scroll">
 
-          <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+          <div class="indicates-required"><span class="asterisk"></span>  Stay Informed</div>
+		  
+		  
           <div class="mc-field-group">
-            <label for="mce-EMAIL">Email Address <span class="asterisk">*</span>
+            <label for="mce-EMAIL">Email Address <span class="asterisk"></span>
             </label>
             <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
           </div>
@@ -94,7 +90,7 @@
             <input type="text" name="b_72ec074251e6f09af48ddb75d_53d77cbb15" tabindex="-1" value="">
           </div>
           <div class="clear">
-            <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+            <input type="submit" value="Submit" name="subscribe" id="mc-embedded-subscribe" class="button">
           </div>
         </div>
       </form>
@@ -115,9 +111,9 @@
     </script>
     <!--End mc_embed_signup-->
   </div>
-  </div>
-
-</body>
-
-
+  </div>	
+		
+	</body>
+	
+	
 </html>
